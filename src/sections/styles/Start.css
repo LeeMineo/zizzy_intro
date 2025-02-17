@@ -1,0 +1,156 @@
+.start-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5vw 3vw;
+  margin-top: 70px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.intro-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.fade-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20vh; /* 페이드아웃 높이 조절 */
+  background: linear-gradient(transparent, black);
+}
+
+.curve-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+/* 텍스트 섹션 스타일 */
+.start-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5vw 3vw;
+  margin-top: 70px; /* 헤더 높이만큼 여백 */
+  box-sizing: border-box;
+}
+
+.text-container {
+  width: 100%;
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+  margin-bottom: 20px;
+}
+
+.text-container h1 {
+  font-size: 12vw;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: white;
+}
+
+.text-container p {
+  font-size: 1.5vw;
+  line-height: 1.6;
+  color:#EDB842;
+  margin-top: 0;
+}
+
+.text-container p strong {
+  font-weight: bold;
+  color: #EDB842;
+}
+
+/* 이미지 섹션 스타일 */
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2vw;
+}
+
+.image-container {
+  width: 100%; /* 부모 컨테이너의 너비를 채움 */
+  overflow: hidden; /* 필요 없는 여백을 숨김 */
+}
+
+.start-image {
+  width: 100vw; /* 화면 너비에 맞춤 */
+  height: 100vh; /* 화면 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 요소를 가득 채움 */
+  display: block;
+}
+
+
+
+/* Intro 컨테이너 */
+.intro-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.intro-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* 뷰포트 너비에 맞춤 */
+  height: 100vh; /* 뷰포트 높이에 맞춤 */
+  object-fit: cover; /* 이미지가 비율을 유지하면서 요소를 가득 채움 */
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+
+.intro-text {
+  z-index: 1;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.app-logos {
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+  margin-top: 3rem;
+}
+
+.app-logo {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-logo:hover {
+  transform: scale(1.1);
+}

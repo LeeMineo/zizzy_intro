@@ -1,0 +1,70 @@
+.value-section {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.value-title {
+  font-size: 2vw;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 15vw 0;
+}
+
+.value-title strong {
+  font-weight: bold;
+  color: #fff;
+}
+
+.value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.value-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.value-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.value-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.value-divider {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* 초기 상태 */
+.value-title,
+.value-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* 나타나는 상태 */
+.value-title.show,
+.value-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
