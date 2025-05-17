@@ -4,7 +4,7 @@ import './styles/Header.css';
 function Header() {
   return (
     <header className="header">
-      <img src="/assets/zizzy_logo.svg" alt="App Store" className="app-logo" />
+      <img src="/assets/zizzy_logo_yellow.svg" alt="App Store" className="app-logo" />
       <nav className="navigation">
         <a href="#value">Value</a>
         <a href="#service">Service</a>

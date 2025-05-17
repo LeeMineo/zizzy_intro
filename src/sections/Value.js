@@ -33,7 +33,7 @@ function Value() {
   return (
     <section id="value" className="value-section">
       <h2 className="value-title" ref={titleRef}>
-        ZIZZY는 <strong>누구나 쉽게 챌린지를 배우고, 나만의 트레이닐 코치</strong>를 제공합니다.
+        ZIZZY는 <strong>누구나 쉽게 챌린지를 배우고, 나만의 트레이닝 코치</strong>를 제공합니다.
       </h2>
       <div className="value-container" ref={valueRef}>
       {/* Trust */}

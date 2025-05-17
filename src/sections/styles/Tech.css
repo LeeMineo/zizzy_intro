@@ -6,7 +6,7 @@
 }
 
 .tech-title {
-  font-size: 2vw;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.6;
   margin: 10vw 0;
@@ -15,6 +15,7 @@
 
 .tech-title strong {
   font-weight: bold;
+  font-size: 2rem;
 }
 
 .tech-grid {
@@ -75,4 +76,36 @@
 .tech-title.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* ---------- 모바일 대응 ---------- */
+@media (max-width: 768px) {
+  .tech-title {
+    font-size: 6vw;
+    margin: 10vw 0;
+  }
+
+  .tech-title strong {
+    font-size: 6vw;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr; /* 한 줄(1열) 정렬 */
+    gap: 30px; /* 간격 조정 */
+    padding: 5vw 0;
+  }
+
+  .tech-icon {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .tech-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .tech-content p {
+    font-size: 0.95rem;
+  }
 }
