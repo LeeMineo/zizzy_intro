@@ -9,7 +9,7 @@ function Start() {
   <div className="text-container">
     <h1>ZIZZY</h1>
     <p>
-      AI 맞춤형 댄스 학습과 트렌디한 영상 촬영, <strong>올인원 솔루션</strong>
+    누구나 쉽게 학습하는 챌린지, <strong>AI 댄스 트레이닝 플랫폼</strong>
     </p>
   </div>
   <div className="app-logos">

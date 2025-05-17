@@ -3,29 +3,29 @@ import './styles/Service.css';
 
 const serviceData = [
   {
-    title: "AI 맞춤형 댄스 학습",
-    description1: "AI가 안무를 분석하고, 사용자의 실력에 맞춘 단계별 학습을 제공",
-    description2: "속도 조절, 구간 반복, 동작 피드백 등 체계적인 학습 기능 포함",
+    title: "AI 맞춤형 챌린지 학습",
+    description1: "AI가 챌린지를 분석하고, 사용자의 실력에 맞춘 단계별 학습을 제공",
+    description2: "속도 조절, 구간 반복, 동작 피드백으로 체계적인 학습 지원",
   },
   {
-    title: "AI 동작 정확도 분석 & 피드백",
-    description1: "어디서 동작이 틀렸는지 시각적으로 피드백 (예: 손 위치, 발 타이밍 등)",
-    description2: "학습 데이터 기반으로 사용자 맞춤 피드백 & 개선 포인트 추천",
+    title: "AI 동작 분석 & 실시간 피드백",
+    description1: "사용자의 동작을 AI가 실시간 분석해 잘못된 부분을 시각적으로 안내",
+    description2: "손, 발, 타이밍 등 개선 포인트를 AI가 정확하게 추천",
   },
   {
-    title: "트렌디한 챌린지 추천",
-    description1: "숏폼 플랫폼의 인기 챌린지를 분석하여 사용자 맞춤형 추천",
-    description2: "최신 트렌드를 놓치지 않고 빠르게 학습하고 참여 가능",
+    title: "최신 챌린지 추천 & 업데이트",
+    description1: "틱톡, 릴스, 숏츠에서 유행하는 챌린지를 AI가 자동 분석해 추천",
+    description2: "놓치기 쉬운 최신 트렌드도 빠르게 캐치하고 참여 가능",
   },
   {
-    title: "AI 자동 촬영 & 보정",
-    description1: "AI가 최적의 촬영 각도와 조명을 추천하여 고품질 영상 제작 지원",
-    description2: "체형 보정 및 스타일 최적화 기능으로 자신감 있는 영상 촬영 가능",
+    title: "나만의 연습 기록 & 성장 피드백",
+    description1: "연습 기록을 저장하고, 나의 성장 과정을 시각적으로 확인",
+    description2: "이전과 현재를 비교하며 도전 의욕을 높이는 성장 피드백 제공",
   },
   {
-    title: "구독 & 추가 결제 모델",
-    description1: "일일 무료 학습 제공 + 추가 학습은 개별 결제 또는 구독 모델 적용",
-    description2: "프리미엄 기능으로 광고 없이 AI 촬영 보정 & 맞춤 학습 지원",
+    title: "구독 & 추가 학습 결제 모델",
+    description1: "하루 4회 무료 학습 제공, 추가 학습은 개별 결제 또는 구독으로 확장",
+    description2: "프리미엄 구독 시 무제한 학습과 고급 피드백 제공",
   },
 ];
 
@@ -53,16 +53,14 @@ function Service() {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
         } else {
-          entry.target.classList.remove('show'); // 다시 초기화
+          entry.target.classList.remove('show');
         }
       });
     };
 
-    const observerOptions = {
-      threshold: 0.1, // 10% 보이면 실행
-    };
-
+    const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver(observerCallback, observerOptions);
+
     if (titleRef.current) {
       observer.observe(titleRef.current);
     }
@@ -73,7 +71,7 @@ function Service() {
   return (
     <section id="service" className="service-section">
       <h2 className="service-title" ref={titleRef}>
-        AI 기반 맞춤형 댄스 학습부터 최적의 촬영까지, <strong>완벽한 숏폼 제작을 위한 올인원 플랫폼</strong>
+        AI 기반 개인 맞춤 챌린지 학습부터 실시간 피드백까지, <strong>누구나 챌린지를 완성할 수 있는 트레이닝 플랫폼</strong>
       </h2>
       <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {serviceData.map((service, index) => (
